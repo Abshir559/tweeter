@@ -1,0 +1,26 @@
+.navbar-top {
+  height: 120px;
+  width: 100%;
+  background-color:#4056A1;
+  color: white;
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-top-logo{
+  font-family: "Bungee", cursive;
+}
+
+.navbar-top-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-top-menu i {
+  color: red;
+}
