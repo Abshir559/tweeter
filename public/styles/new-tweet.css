@@ -6,15 +6,13 @@
 }
 
 .formNewTweet {
-  display: none;
+  display: block;
   flex-direction: column;
   justify-content: space-between;
   font-family: sans-serif;
   font-size: medium;
   
 }
-
-
 
 #submit {
   background-color: #4056A1;
@@ -25,5 +23,9 @@
   background: transparent;
   border: none;
   border-bottom: 5px solid grey;
-  min-width: 300px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 20px;
+
 }
