@@ -18,16 +18,11 @@ const fetchTweets = () => {
 
 const renderTweets = function (tweets) {
   console.log(tweets)
-  // $(".tweets").empty();
+  $("#tweets-container").empty();
   tweets.forEach(tweet => {
     const $newTweet = createTweetElement(tweet)
-    // $("#tweets-container").prepend($newTweet) 
     $("#tweets-container").prepend($newTweet)
   });
-  /* for (const tweet of tweets) {
-    const $newTweet = createTweetElement(tweet)
-    $(".tweets").prepend($newTweet)
-  } */
 
 }
 
@@ -76,7 +71,7 @@ $(document).ready(function () {
     const tweetLength = $("#tweet-text").val().length
     if (tweetLength > 140) {
       document.querySelector('.error').innerHTML = 'text too long. must be less than 140'
-      $('.error').show() 
+      $('.error').show()
       console.log(" must be less than 140 characters")
       return false
 
@@ -84,7 +79,7 @@ $(document).ready(function () {
 
     else if ($("#tweet-text").val() === '') {
       document.querySelector('.error').innerHTML = 'Error, Empty tweet.'
-      $('.error').show() 
+      $('.error').show()
       console.log("empty tweet")
       return false
     }
