@@ -6,6 +6,7 @@ const fetchTweets = () => {
     dataType: "json",
     success: function (data) {
       console.log(data)
+      document.getElementById("error-message").style.display = "none"
       renderTweets(data)
     },
 
