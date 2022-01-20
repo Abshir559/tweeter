@@ -35,7 +35,7 @@ div.tweet {
 main.content {
   min-height: 120px;
   width: 95%;
-  word-wrap: break-word;
+  word-break: break-word !important;
   border: none;
   border-bottom: 4px solid gray;
   display: flex;
